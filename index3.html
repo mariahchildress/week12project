@@ -4,43 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teacher Lesson Plans</title>
-    <link rel="stylesheet" href="index.css">
+    <title>Integrated Math 1 Lesson Plans</title>
+    <link rel="stylesheet" href="index3.css">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
-
 </head>
 <body>
-
     <div class="title">
-        <h1>Teacher Lesson Plans</h1>
-        <p>Daily Lesson Plan Log for Integrated Math 1</p>
+        <h1>Integrated Math 1 Lesson Plans for End of Year 2021-2022</h1>
+        <p>End of Year Lessons</p>
     </div>
     <div class="form">
-        <form action="javascript:void(0);" method="POST" onsubmit="app.Add()">
-            <input type="text" id="add-lesson" placeholder="New Lesson Plan">
+        <form action="javascript.void(0);" method="POST" onsubmit="app.Add()">
+            <input type="text" id="add-lesson" placeholder="New Lesson">
+            <input type="text" id="add-standard" placeholder="New Standard">
             <input type="submit" value="Add" class="btn btn-primary">
         </form>
-        <p>You Need:</p>
+        <p>Number of Lessons:</p>
         <p id="counter"></p>
         <table>
-            <tr class="Lesson">
-                <th><h3>New Lesson</h3></th>
+            <tr class="lessons">
+                <th><h3>Lessons and Standards:</h3></th>
             </tr>
-            <body id="lessons">
-                
-            </body>
+            <tbody id="lessons">
+
+            </tbody>
         </table>
     </div>
-
     <div id="edit-box" role="aria-hidden">
         <form action="javascript:void(0);" method="POST" id="save-edit">
-            <input type="text" id="edit-lesson-plan">
+            <input type="text" id="edit-lesson">
             <input type="submit" value="Save" class="btn btn-success">
             <a onclick="CloseInput()" aria-label="Close">&#10006;</a>
         </form>
     </div>
 
-    <script src="index.js"></script>
+    <script src="index3.js"></script>
     
 </body>
 </html>
