@@ -35,15 +35,15 @@ var app = new function() {
     //update item//
     this.Edit = function(item) {
         //show edit box and change value//
-        el = document.getElementById('edit-lesson');
+        var el = document.getElementById('edit-lesson');
         this.el.value = this.lessons[item];
         document.getElementById('edit-box').style.display = 'block';
         self = this;
 
-        document.getElementById('save-edit').onsubmit = function () {
+        document.getElementById('save-edit').onsubmit = function() {
             var lessons = el.value;
             if(lessons) {
-                self.lessons.splice(item, 1, task.trim());
+                self.lessons.splice(item, 1, lessons.trim());
                 self.FetchAll;
                 CloseInput();
             }
