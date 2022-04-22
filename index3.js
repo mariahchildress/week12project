@@ -35,7 +35,7 @@ var app = new function() {
     //update item//
     this.Edit = function(item) {
         //show edit box and change value//
-        el = document.getElementById('edit-lesson')
+        el = document.getElementById('edit-lesson');
         this.el.value = this.lessons[item];
         document.getElementById('edit-box').style.display = 'block';
         self = this;
