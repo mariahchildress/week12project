@@ -44,7 +44,7 @@ var app = new function() {
             var lessons = el.value;
             if(lessons) {
                 self.lessons.splice(item, 1, lessons.trim());
-                self.FetchAll;
+                self.FetchAll();
                 CloseInput();
             }
         }

@@ -1,11 +1,11 @@
 .title {
     text-align: center;
-    margin-top: 25px;
+    margin-top: 50px;
 }
 
 .form {
     margin:auto;
-    max-width: 80%;
+    max-width: 75%;
     text-align: center;
 }
 
@@ -15,14 +15,14 @@ input[type='submit'], button, [aria-label] {
 
 #edit-box {
     display: none;
-    max-width: 80%;
+    max-width: 75%;
     margin:auto;
     margin-top: 10px;
 }
 
 td {
     background-color: antiquewhite;
-    padding: 10px;
+    padding: 5px;
     text-align: left;
 }
 
